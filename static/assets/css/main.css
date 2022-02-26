@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+body.is-preload #wrapper.fade-in:before {
+  opacity: 1;
+}
+
+@media screen and (orientation: portrait) {
+  #wrapper > .bg {
+    background-size: auto, auto, auto 175%;
+  }
+}
+
+/* Intro */
+
+#intro {
+  color: #ffffff;
+  padding: 30px 30px 60px 30px;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: -moz-flex-end;
+  -webkit-justify-content: -webkit-flex-end;
+  -ms-justify-content: -ms-flex-end;
+  justify-content: flex-end;
+  -moz-transition: opacity 1s ease, -moz-transform 1s ease;
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
+  -ms-transition: opacity 1s ease, -ms-transform 1s ease;
+  transition: opacity 1s ease, transform 1s ease;
+  position: relative;
+  cursor: default;
+  text-align: center;
+  z-index: 1;
+  min-height: 100vh;
+  background-image: url("/images/hero-bg.png");
+  background-size: auto, auto, 100% auto;
+  background-position: center, center, top center;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+#intro .logo {
+  width: 20%;
+  height: auto;
+  padding: 5px;
+}
+#intro .truck {
+  width: 40%;
+  height: auto;
+  padding: 5px;
+}
+#intro .btn-body {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#intro .mobile {
+  display: none;
+}
+#intro .btn-body a {
+  background-color: #d30025;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  padding: 15px 30px;
+  border-radius: 15px;
+  text-decoration: none;
+  min-width: 300px;
+}
+#intro .btn-body a img {
+  width: 22px;
+  height: 22px;
+}
+#intro .btn-body a:hover {
+  background-color: #af0927;
+}
+
+#intro .languages ul {
+  list-style: none;
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  border: #af0927 1px solid;
+  border-radius: 15px;
+}
+#intro .languages ul a {
+  color: #fff;
+  padding-left: 8px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 736px) {
+  #intro .mobile {
+    display: flex;
+  }
+  #intro .logo {
+    width: 60%;
+    height: auto;
+    padding: 5px;
+  }
+  #intro .truck {
+    width: 90%;
+    height: auto;
+    padding: 5px;
+  }
+}
